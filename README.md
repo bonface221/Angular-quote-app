@@ -42,7 +42,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 </ul>
 
 ## Live site
-here is a working live demo: [link](https://bonface221.github.io/Pizza-4-U/)
+here is a working live demo: [link](https://bonface221.github.io/Angular-quote-app/)
 
 ## Development server
 
