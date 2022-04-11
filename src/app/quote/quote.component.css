@@ -1,0 +1,14 @@
+
+.quoteStyle{
+    font-size: 1.3rem;
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.h1{
+    color: #ff5421;
+    font-size: 3rem;
+    align-items: center;
+}

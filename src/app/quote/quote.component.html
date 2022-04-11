@@ -1,0 +1,34 @@
+<section class="view intro-2">
+    <div class="container flex-center">
+        <div class="row flex-center pt-5 mt-1 w-100">
+            <div class="col-md-6 text-center text-md-left mb-5 card">
+                <h2 class="h1 font-bold mt-1"> Quotes</h2>
+                <hr class="hr-light">
+                <h6>
+                    <div class="quoteStyle myQuote " *ngFor="let quote of quotes; let i=index">
+                        <p class="font-bold" appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
+                            {{quote.quote}}
+                        </p>
+                        <h3 class="font-bold " *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">
+                            {{quote.quote}}
+                        </h3>
+                        <app-details [quote]="quote"></app-details>
+                        <div id="buttons">
+                            <button class="btn btn-info " (click)="upvote(i)">Upvote </button>
+                            <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
+                            <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+                        </div>
+                        
+                        <hr class="hr-light">
+                    </div>
+                </h6>
+                <br>
+            </div>
+            <div class="col-md-6 col-xl-5 offset-xl-1">
+                <div class="card">
+                    <app-form (emitQuote)="addQuote($event)"></app-form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
