@@ -1,0 +1,35 @@
+<form (ngSubmit)="submitQuote()" class="card-body ">
+    <!--Header-->
+    <div class="text-center">
+
+        <h3> Add Quote 
+        </h3>
+        <hr class="hr-light">
+    </div>
+    <div>
+        <label for="name">Person's name</label>
+        <input type="text" id="name" class="form-control " name="publisher" [(ngModel)]="name">
+    </div>
+    <div>
+         <label for="form2">Quotes</label>
+        <input type="text" id="form2" class="form-control" name="quote" [(ngModel)]="quote" >
+       
+    </div>
+
+    <div>
+        <label for="author">Author</label>
+        <input type="text" id="author" class="form-control" name="author" [(ngModel)]="author">
+        
+    </div>
+    <div>
+        <label class="mb-3" for="date"> Date</label>
+        <input type='date' id="date" class="form-control" name="Date" [(ngModel)]="date">
+        
+    </div>
+    <div class="text-center">
+        <hr class="hr-light mb-3 mt-4">
+        <button type="submit"  class="btn btn-info" >Add Quote</button>
+        
+    </div>
+
+</form>
